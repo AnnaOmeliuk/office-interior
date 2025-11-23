@@ -18,13 +18,24 @@ new Swiper(".swiper", {
 // _____________________________ToggleEvent_____________________________
 const minusButtons = document.querySelectorAll(".minus-quantity");
 const plusButtons = document.querySelectorAll(".plus-quantity");
+// кількість продуктів
 const currentQuantity = document.querySelectorAll(".current-quantity-number");
+
 // current-price-number
 const currentPrice = document.querySelector(".current-price-number");
 const oldPrice = document.querySelector(".current-price-discount");
 // початкова ціна за 1 одиницю товару
 const oneItemPrice = Number(currentPrice.innerHTML);
 const oneItemOldPrice = Number(oldPrice.innerHTML);
+
+// додати в корзину
+const basketBtn = document.querySelector(".basket-btn");
+const basketCount = document.querySelector(".add-items");
+const basketCardBtn = document.querySelector(".add-items-card")
+// додати в улюблене
+const favoriteBtn = document.querySelector(".favorite-btn");
+
+
 
 minusButtons.forEach(btn => {
 	btn.addEventListener("click", () => {
@@ -49,3 +60,17 @@ plusButtons.forEach(btn => {
 		});
 	});
 });
+
+
+
+// початкова кількість продуктів до замовлення
+let itemsInBasket = 0;
+
+basketBtn.addEventListener("click", () => {
+  let quantity = Number(currentQuantity[0].textContent); 
+  itemsInBasket += quantity;
+  basketCount.textContent = itemsInBasket;
+  basketCount.classList.remove("add-items-hidden");
+  basketCardBtn.textContent = itemsInBasket;
+  basketCardBtn.classList.remove("add-items-card-hidden");
+});;

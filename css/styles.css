@@ -166,9 +166,37 @@ a {
 }
 
 .nav-list-btn {
+	position: relative;
 	background-color: transparent;
 	border: none;
 }
+
+
+.add-items{
+	position: absolute;
+	z-index: 1;
+	text-align: center;
+	bottom: 15px;
+	left: 12px;
+	width: 14px;
+	height: 14px;
+	background-color: red;
+	border-radius: 50%;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2px;
+
+	color: white;
+    font-size: 10px;
+}
+
+.add-items-hidden {
+	display: none;
+}
+
+
 
 .nav-list-svg:hover,
 .nav-list-svg:focus {
@@ -391,6 +419,7 @@ a {
 	margin-bottom: 18px;
 }
 .basket-btn {
+	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -407,6 +436,29 @@ a {
 	padding: 10px 24px;
 	width: 283px;
 	height: 44px;
+}
+
+.add-items-card{
+	position: absolute;
+	z-index: 1;
+	text-align: center;
+bottom: 22px;
+    left: 80px;
+	width: 14px;
+	height: 14px;
+	background-color: red;
+	border-radius: 50%;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2px;
+
+	color: white;
+    font-size: 10px;
+}
+.add-items-card-hidden{
+	display: none;
 }
 
 .basket-btn:hover,
