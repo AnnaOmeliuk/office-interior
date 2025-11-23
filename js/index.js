@@ -33,7 +33,7 @@ const basketBtn = document.querySelector(".basket-btn");
 const basketCount = document.querySelector(".add-items");
 const basketCardBtn = document.querySelector(".add-items-card")
 // додати в улюблене
-const favoriteBtn = document.querySelector(".favorite-btn");
+const favoriteBtn = document.querySelector(".add-to-favorite-btn");
 
 
 
@@ -73,4 +73,10 @@ basketBtn.addEventListener("click", () => {
   basketCount.classList.remove("add-items-hidden");
   basketCardBtn.textContent = itemsInBasket;
   basketCardBtn.classList.remove("add-items-card-hidden");
-});;
+});
+
+// додати товар в улюблене 
+favoriteBtn.addEventListener("click", () => {
+	console.log("add to <3")
+})
+

@@ -491,6 +491,18 @@ bottom: 22px;
 	justify-content: center;
 }
 
+.add-to-favorite-btn{
+border: none;
+}
+
+.add-to-favorite:hover,
+.add-to-favorite:focus{
+	scale: 1.2;
+	transition: scale var(--animation-time-transition);
+}
+
+
+
 .proposal-btn-container {
 	display: flex;
 	gap: 10px;
