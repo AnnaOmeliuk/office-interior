@@ -294,13 +294,13 @@
 
 						<div class="total-price-container">
 							<div class="change-quantity-container">
-								<button class="minus-quantity">
+								<button class="minus-quantity toggleQuantity">
 									<svg class="minus-quantity-svg" width="10" height="2">
 										<use href="./images/sprite.svg#minus"></use>
 									</svg>
 								</button>
 								<span class="current-quantity-number">1</span>
-								<button class="plus-quantity">
+								<button class="plus-quantity toggleQuantity">
 									<svg class="plus-quantity-svg" width="10" height="10">
 										<use href="./images/sprite.svg#plus"></use>
 									</svg>
@@ -308,8 +308,8 @@
 							</div>
 
 							<div class="current-price-container">
-								<p class="current-price-number">€300,00</p>
-								<span class="current-price-discount">€365,00</span>
+								<p class="current-price">€<span class="current-price current-price-number">300</span>,00</p>
+								<p class="old-price">€<span class="old-price current-price-discount">365</span>,00</p>
 							</div>
 						</div>
 
@@ -317,13 +317,15 @@
 
 
 							<div class="change-quantity-container__desktop">
-								<button class="minus-quantity">
+								<button class="minus-quantity toggleQuantity">
 									<svg class="minus-quantity-svg" width="10" height="2">
 										<use href="./images/sprite.svg#minus"></use>
 									</svg>
 								</button>
+
 								<span class="current-quantity-number">1</span>
-								<button class="plus-quantity">
+
+								<button class="plus-quantity toggleQuantity">
 									<svg class="plus-quantity-svg" width="10" height="10">
 										<use href="./images/sprite.svg#plus"></use>
 									</svg>
@@ -926,7 +928,6 @@
 		</footer>
 		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 		<script type="module" src="js/swiper-partners.js"></script>
-
 		<script type="module" src="js/index.js"></script>
 	</body>
 </html>
